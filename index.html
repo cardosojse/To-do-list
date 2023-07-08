@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Todo List</title>
 </head>
 <body>
     <header>
-        <img src="images/Logo.png" alt="todo-logo">
+        <img src="images/Logo.png" alt="todo-logo" class="todo-logo">
     </header>
     <main>
         <div class="input-container">
-            <input type="text" name="input-text" class="input-text" placeholder="Adicionar tarefa">
+            <input type="text" name="input-text" 
+                class="input-text" placeholder="Adicione uma nova tarefa">
             <input type="submit" name="input-submit" class="input-submit" value="Criar">
         </div>
-        <div class="task-container">
+        <div class="task-info">
             <p>Tarefas Criadas</p>
             <p>Concluídas</p>
-            <hr>
-            <img src="images/Clipboard.png" alt="clipboard">
+        </div>
+        <div class="task-data">
+            <img src="images/Clipboard.png" alt="clipboard" class="clipboard-img">
             <p>Você ainda não tem tarefas cadastradas</p>
             <p>Crie tarefas e organize seus itens a fazer</p>
+            <!-- <ul class="task-list">
+                <li class="task-item">item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul> -->
         </div>
-    </main>
+    </main>    
+    <script src="app.js"></script>
 </body>
-</html>
+</html>        

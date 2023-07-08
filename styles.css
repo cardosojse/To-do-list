@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Produto color */
+    --clr-blue: #4EA8DE;
+    --clr-dark-blue: #1E6F9F;
+    --clr-purple: #8284FA;
+    --clr-dark-purple: #5E60CE;
+    /* Base color */
+    --clr-gray-700: #0d0d0d;
+    --clr-gray-600: #1a1a1a;
+    --clr-gray-500: #262626;
+    --clr-gray-400: #333333;
+    --clr-gray-300: #808080;
+    --clr-gray-200: #d9d9d9;
+    --clr-gray-100: #f2f2f2;
+    --clr-danger: #e25858;
+}
+body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--clr-gray-600);
+}
+header{
+    background-color: var(--clr-gray-700);
+    width: 100vw;
+    height: 200px;
+    position: relative;
+}
+.todo-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main{
+    max-width: 640px;
+    margin: auto;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.input-text{
+    width: 85%;
+    font-size: 16px;
+    border: 1px solid var(--clr-gray-700);
+    background-color: var(--clr-gray-500);
+    color: var(--clr-gray-300);
+}
+.input-submit{
+    width: 15%;
+    font-size: 14px;
+    border: none;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-gray-100);
+}
+.input-text, .input-submit{
+    padding: 16px;
+    border-radius: 8px;
+    outline: none;
+}
