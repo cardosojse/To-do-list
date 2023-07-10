@@ -11,6 +11,7 @@
     --clr-dark-blue: #1E6F9F;
     --clr-purple: #8284FA;
     --clr-dark-purple: #5E60CE;
+
     /* Base color */
     --clr-gray-700: #0d0d0d;
     --clr-gray-600: #1a1a1a;
@@ -43,9 +44,12 @@ main{
     margin: auto;
 }
 .input-container{
+    position: absolute;
+    top: 19%;
     display: flex;
     justify-content: space-between;
     gap: 8px;
+    width: 640px;
 }
 .input-text{
     width: 85%;
@@ -60,9 +64,48 @@ main{
     border: none;
     background-color: var(--clr-dark-blue);
     color: var(--clr-gray-100);
+    font-weight: 700;
 }
 .input-text, .input-submit{
+    outline: none;
     padding: 16px;
     border-radius: 8px;
-    outline: none;
+}
+.task-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--clr-purple);
+    margin: 100px 0 30px;
+}
+.task-info span:first-child{
+    color: var(--clr-blue);
+}
+.task-data{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-top: 1px solid var(--clr-gray-400);
+    border-radius: 8px;
+    padding: 64px 24px;
+    color: var(--clr-gray-300);
+}
+.task-data span:nth-child(2){
+    margin-top: 20px;
+    font-weight: 700;
+}
+.task-list{
+    display: grid;
+    gap: 12px;
+    color: var(--clr-gray-100);
+    list-style: none;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+.task-list li{
+    background-color: var(--clr-gray-500);
+    border: 1px solid var(--clr-gray-400);
+    border-radius: 8px;
+    padding: 16px;
 }
