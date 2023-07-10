@@ -5,7 +5,7 @@ const taskList = document.querySelector(".task-list");
 
 addTask.addEventListener("click", function(){
     if (inputBox.value === ''){
-        alert('Você deve escrever algo!')
+        alert('Você deve escrever algo!');
     }else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
