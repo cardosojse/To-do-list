@@ -110,18 +110,19 @@ main{
     list-style: none;
     font-size: 14px;
     line-height: 19.6px;
-    position: relative;
     cursor: pointer;
 }
 .task-list li{
+    position: relative;
     background-color: var(--clr-gray-500);
     border: 1px solid var(--clr-gray-400);
     border-radius: 8px;
-    padding: 16px 10px 16px 45px;
+    padding: 16px 45px 16px 45px;
 }
 .task-list li::before{
     content: '';
     position: absolute;
+    top: 31.5%;
     left: 2%;
     width: 24px;
     height: 24px;
@@ -137,8 +138,8 @@ main{
 }
 .task-list li span{
     position: absolute;
+    top: 31.5%;
     right: 3%;
     color: var(--clr-danger);
     font-size: 20px;
-    text-align: center;
 }

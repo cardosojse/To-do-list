@@ -2,7 +2,6 @@ const inputBox = document.querySelector(".input-text");
 const addTask = document.querySelector(".input-submit");
 const taskList = document.querySelector(".task-list");
 
-
 addTask.addEventListener("click", function(){
     if (inputBox.value === ''){
         alert('Você deve escrever algo!');
