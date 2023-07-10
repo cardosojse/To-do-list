@@ -39,4 +39,4 @@ function getData(){
     taskList.innerHTML = localStorage.getItem("data");
 }
 
-localStorage.removeItem("data");
+getData();
