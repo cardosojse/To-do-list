@@ -58,6 +58,10 @@ main{
     background-color: var(--clr-gray-500);
     color: var(--clr-gray-300);
 }
+.input-text:focus{
+    color: var(--clr-gray-100);
+    border: 1px solid var(--clr-dark-purple);
+}
 .input-submit{
     width: 15%;
     font-size: 14px;
@@ -65,6 +69,10 @@ main{
     background-color: var(--clr-dark-blue);
     color: var(--clr-gray-100);
     font-weight: 700;
+}
+.input-submit:hover{
+    cursor: pointer;
+    background-color: var(--clr-blue);
 }
 .input-text, .input-submit{
     outline: none;
@@ -103,21 +111,35 @@ main{
     list-style: none;
     font-size: 14px;
     line-height: 19.6px;
+    position: relative;
+    cursor: pointer;
 }
 .task-list li{
     background-color: var(--clr-gray-500);
     border: 1px solid var(--clr-gray-400);
     border-radius: 8px;
-    padding: 16px;
+    padding: 16px 10px 16px 45px;
 }
-
-/* .task-list li::before{
+.task-list li::before{
     content: '';
     position: absolute;
-    top: 26.2%;
     left: 2%;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-image: url('images/unchecked.png');
-} */
+}
+.task-list li.checked{
+    color: var(--clr-gray-300);      
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+    background-image: url('images/checked.png');
+}
+.task-list li span{
+    position: absolute;
+    right: 3%;       
+    color: var(--clr-danger);
+    font-size: 20px;
+    text-align: center;
+}
