@@ -10,12 +10,10 @@ addTask.addEventListener("click", function(){
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         taskList.appendChild(li);
-
         // "X"
         let span = document.createElement("span");
         span.innerHTML = '\u00d7';
         li.appendChild(span);
-        
         // Condição que remove o template
         if (li.innerHTML !== ''){
             document.querySelector(".task-data").style.display = "none";
