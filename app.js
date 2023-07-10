@@ -21,11 +21,11 @@ addTask.addEventListener("click", function(){
     saveData();
 });
 
-taskList.addEventListener("click", function(click){
-    if (click.target.tagName === "LI"){
-        click.target.classList.toggle("checked");
-    }else if (click.target.tagName === "SPAN"){
-        click.target.parentElement.remove();
+taskList.addEventListener("click", function(userClick){
+    if (userClick.target.tagName === "LI"){
+        userClick.target.classList.toggle("checked");
+    }else if (userClick.target.tagName === "SPAN"){
+        userClick.target.parentElement.remove();
     }
     saveData();
 });
