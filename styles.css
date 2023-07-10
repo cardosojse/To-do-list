@@ -138,8 +138,12 @@ main{
 }
 .task-list li span{
     position: absolute;
-    right: 3%;       
+    right: 3%;
     color: var(--clr-danger);
     font-size: 20px;
     text-align: center;
 }
+/* .task-list li span:hover{
+    border: 1px solid var(--clr-danger);
+    border-radius: 50%;
+} */

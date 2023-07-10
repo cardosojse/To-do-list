@@ -11,11 +11,15 @@ addTask.addEventListener("click", function(){
         li.innerHTML = inputBox.value;
         taskList.appendChild(li);
 
-        document.querySelector(".task-data").style.display = "none";
-
+        // "X"
         let span = document.createElement("span");
         span.innerHTML = '\u00d7';
         li.appendChild(span);
+        
+        // Condição que remove o template
+        if (li.innerHTML !== ''){
+            document.querySelector(".task-data").style.display = "none";
+        }
     }
     inputBox.value = '';
     saveData();
