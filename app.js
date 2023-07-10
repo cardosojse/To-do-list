@@ -15,9 +15,7 @@ addTask.addEventListener("click", function(){
         span.innerHTML = '\u00d7';
         li.appendChild(span);
         // Condição que remove o template
-        if (li.innerHTML !== ''){
-            document.querySelector(".task-data").style.display = "none";
-        }
+        document.querySelector(".task-data").style.display = "none";
     }
     inputBox.value = '';
     saveData();
@@ -36,7 +34,7 @@ function saveData(){
 }
 
 function getData(){
-    localStorage.removeItem("data");
+    taskList.innerHTML = localStorage.getItem("data");
 }
 
 getData();
