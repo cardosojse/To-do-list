@@ -8,7 +8,7 @@ addTask.addEventListener("click", function(){
         alert('Você deve escrever algo!')
     }else{
         let li = document.createElement("li");
-        li.innerText = typeTask.value;
+        li.innerHTML = typeTask.value;
         taskList.appendChild(li);
         document.querySelector(".task-data").style.display = "none";
     }

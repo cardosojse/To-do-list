@@ -96,7 +96,8 @@ main{
     font-weight: 700;
 }
 .task-list{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
     color: var(--clr-gray-100);
     list-style: none;
@@ -109,3 +110,14 @@ main{
     border-radius: 8px;
     padding: 16px;
 }
+
+/* .task-list li::before{
+    content: '';
+    position: absolute;
+    top: 26.2%;
+    left: 2%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+} */
