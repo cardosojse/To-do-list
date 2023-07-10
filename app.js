@@ -27,6 +27,7 @@ taskList.addEventListener("click", function(click){
     }else if (click.target.tagName === "SPAN"){
         click.target.parentElement.remove();
     }
+    saveData();
 });
 
 function saveData(){
