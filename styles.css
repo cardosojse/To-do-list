@@ -45,7 +45,7 @@ main{
 }
 .input-container{
     position: absolute;
-    top: 19%;
+    top: 18.5%;
     display: flex;
     justify-content: space-between;
     gap: 8px;
