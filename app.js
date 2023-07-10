@@ -33,7 +33,6 @@ function saveData(){
 
 function getData(){
     taskList.innerHTML = localStorage.getItem("data");
-    document.querySelector(".task-data").style.display = "none";
 }
 
-// getData();
+getData();
