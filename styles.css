@@ -89,6 +89,9 @@ main{
 .task-info span:first-child{
     color: var(--clr-blue);
 }
+/* .task-info::before{
+    content: '';
+} */
 .task-data{
     display: grid;
     justify-items: center;
