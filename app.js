@@ -38,10 +38,10 @@ function getData(){
 }
 
 function removeDiv(){
-    if (taskList.innerText !== ''){
-        document.querySelector(".task-data").style.display = "none";
-    }else{
+    if (taskList.innerText === ''){
         document.querySelector(".task-data").style.display = "grid";
+    }else{
+        document.querySelector(".task-data").style.display = "none";
     }
 }
 
