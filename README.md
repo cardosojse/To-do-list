@@ -1,4 +1,4 @@
-# ToDo List (ONGOING)
+# ToDo List
 
 This project was based on ToDo List - Desafio Ignite 
 
