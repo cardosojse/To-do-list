@@ -129,12 +129,12 @@ main{
     border-radius: 50%;
     background-image: url('images/unchecked.png');
 }
+.task-list li.checked::before{
+    background-image: url('images/checked.png');
+}
 .task-list li.checked{
     color: var(--clr-gray-300);      
     text-decoration: line-through;
-}
-.task-list li.checked::before{
-    background-image: url('images/checked.png');
 }
 .task-list li span{
     position: absolute;

@@ -13,8 +13,8 @@ addTask.addEventListener("click", function(){
         let span = document.createElement("span");
         span.innerHTML = '\u00d7';
         li.appendChild(span);
-        // Condição que remove o template
-        document.querySelector(".task-data").style.display = "none";
+        // Função que remove o template
+        removeEmptyTask();
     }
     inputBox.value = '';
     saveData();
@@ -27,6 +27,7 @@ taskList.addEventListener("click", function(userClick){
         userClick.target.parentElement.remove();
     }
     saveData();
+    removeEmptyTask();
 });
 
 function saveData(){
@@ -35,6 +36,14 @@ function saveData(){
 
 function getData(){
     taskList.innerHTML = localStorage.getItem("data");
+}
+
+function removeEmptyTask(){
+    if (taskList.innerHTML !== ''){
+        document.querySelector(".task-data").style.display = "none";
+    }else{
+        document.querySelector(".task-data").style.display = "grid";
+    }
 }
 
 getData();
