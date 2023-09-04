@@ -14,7 +14,7 @@ addTask.addEventListener("click", function(){
         li.appendChild(span);
     }
     inputBox.value = '';
-    removeDiv()
+    removeDiv();
     saveData();
 });
 
@@ -24,7 +24,7 @@ taskList.addEventListener("click", function(userClick){
     }else if (userClick.target.tagName === "SPAN"){
         userClick.target.parentElement.remove();
     }
-    removeDiv()
+    removeDiv();
     saveData();
 });
 
