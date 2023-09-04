@@ -43,12 +43,9 @@ main{
     margin: auto;
 }
 .input-container{
-    position: absolute;
-    top: 18.5%;
     display: flex;
     justify-content: space-between;
     gap: 8px;
-    width: 640px;
 }
 .input-text{
     width: 85%;
@@ -89,9 +86,6 @@ main{
 .task-info span:first-child{
     color: var(--clr-blue);
 }
-/* .task-info::before{
-    content: '';
-} */
 .task-data{
     display: grid;
     justify-items: center;

@@ -9,7 +9,6 @@ addTask.addEventListener("click", function(){
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         taskList.appendChild(li);
-
         let span = document.createElement("span");
         span.innerHTML = '\u00d7';
         li.appendChild(span);
