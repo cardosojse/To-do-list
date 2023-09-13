@@ -24,7 +24,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    margin: 0rem;
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
 }
@@ -41,6 +42,7 @@ main{
     width: calc(100% - 50px);
     max-width: 640px;
     margin: auto;
+    padding-bottom: 25px;
 }
 .input-container{
     position: absolute;
@@ -127,8 +129,9 @@ main{
 .task-list li::before{
     content: '';
     position: absolute;
-    top: 31.5%;
+    top: 50%;
     left: 2%;
+    transform: translateY(-50%);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -143,8 +146,18 @@ main{
 }
 .task-list li span{
     position: absolute;
-    top: 31.5%;
+    top: 50%;
     right: 3%;
+    transform: translateY(-50%);
     color: var(--clr-danger);
     font-size: 20px;
 }
+::-webkit-scrollbar{
+    width: 0;
+}
+/* ::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+} */
