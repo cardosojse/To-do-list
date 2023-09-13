@@ -39,6 +39,7 @@ header{
 }
 main{
     width: calc(100% - 50px);
+    max-width: 640px;
     margin: auto;
 }
 .input-container{
@@ -51,6 +52,7 @@ main{
     align-items: center;
     gap: 8px;
     width: calc(100% - 50px);
+    max-width: 640px;
 }
 .input-text{
     width: 80%;
