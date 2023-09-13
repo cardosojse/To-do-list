@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *{
-    margin: 0;
+    margin: 0rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,7 +22,9 @@
     --clr-danger: #e25858;
 }
 body{
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
 }
@@ -30,25 +32,28 @@ header{
     background-color: var(--clr-gray-700);
     width: 100vw;
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
-.todo-logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 main{
-    max-width: 640px;
+    width: calc(100% - 50px);
     margin: auto;
 }
 .input-container{
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 8px;
+    width: calc(100% - 50px);
 }
 .input-text{
-    width: 85%;
+    width: 80%;
     font-size: 16px;
     border: 1px solid var(--clr-gray-700);
     background-color: var(--clr-gray-500);
@@ -59,7 +64,7 @@ main{
     border: 1px solid var(--clr-dark-purple);
 }
 .input-submit{
-    width: 15%;
+    width: 20%;
     font-size: 14px;
     border: none;
     background-color: var(--clr-dark-blue);
@@ -94,6 +99,7 @@ main{
     border-radius: 8px;
     padding: 64px 24px;
     color: var(--clr-gray-300);
+    text-align: center;
 }
 .task-data span:nth-child(2){
     margin-top: 20px;
