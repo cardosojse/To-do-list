@@ -22,8 +22,8 @@
     --clr-danger: #e25858;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     margin: 0rem;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
@@ -32,7 +32,7 @@ body{
 header{
     background-color: var(--clr-gray-700);
     width: 100vw;
-    height: 200px;
+    padding: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ main{
 }
 .input-container{
     position: absolute;
-    top: 175px;
+    top: calc(0% + 183px);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
