@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *{
-    margin: 0rem;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,17 +22,13 @@
     --clr-danger: #e25858;
 }
 body{
-    /* width: 100vw;
-    height: 100vh; */
-    margin: 0rem;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
 }
 header{
     background-color: var(--clr-gray-700);
-    width: 100vw;
-    padding: 5rem;
+    padding: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
