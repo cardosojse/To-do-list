@@ -24,6 +24,7 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
+    overflow-y: auto;
 }
 header{
     background-color: var(--clr-gray-700);
