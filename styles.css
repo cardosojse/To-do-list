@@ -22,7 +22,6 @@
     --clr-danger: #e25858;
 }
 body{
-    overflow: hidden;
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
 }
