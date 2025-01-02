@@ -88,7 +88,7 @@ main{
     color: var(--clr-purple);
     margin: 90px 0 20px;
 }
-.task-info span:first-child{
+.task-info p:first-child{
     color: var(--clr-blue);
 }
 .task-data{
@@ -101,10 +101,20 @@ main{
     color: var(--clr-gray-300);
     text-align: center;
 }
-.task-data span:nth-child(2){
+.task-data p:nth-child(2){
     margin-top: 20px;
     font-weight: 700;
 }
+
+.task-counter {
+    color: #fff;
+    padding: 2px 4px;
+    margin-left: 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    background-color: var(--clr-gray-400);
+}
+
 .task-list{
     display: flex;
     flex-direction: column;

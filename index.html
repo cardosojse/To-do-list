@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <title>Todo List</title>
 </head>
-<body onload="removeDiv()">
+<body onload="loadStuff()">
     <header>
         <img src="images/Logo.png" alt="todo-logo" class="todo-logo">
     </header>
@@ -19,8 +19,8 @@
                 class="input-submit" value="Criar">
         </div>
         <div class="task-info">
-            <span>Tarefas Criadas</span>
-            <span>Concluídas</span>
+            <p>Tarefas Criadas<span class="task-counter">0</span></p>
+            <p>Concluídas</p>
         </div>
         <div class="task-data">
             <img src="images/Clipboard.png" alt="clipboard">
