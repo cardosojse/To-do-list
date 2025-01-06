@@ -10,8 +10,8 @@ addTask.addEventListener("click", function () {
     return;
   } else {
     let input = inputBox.value;
-
     tasks.push(input);
+    taskCounter.innerHTML++;
 
     let li = document.createElement("li");
     li.innerHTML = input;
@@ -22,9 +22,7 @@ addTask.addEventListener("click", function () {
     li.appendChild(span);
   }
 
-  console.log(tasks);
   inputBox.value = "";
-
   removeDiv();
   saveData();
 });
@@ -35,6 +33,7 @@ taskList.addEventListener("click", function (userClick) {
   } else if (userClick.target.tagName === "SPAN") {
     userClick.target.parentElement.remove();
   }
+  taskCounter.innerHTML--;
   removeDiv();
   saveData();
 });
@@ -54,13 +53,6 @@ function removeDiv() {
     document.querySelector(".task-data").style.display = "none";
   }
 }
-
-function counter() {
-  let counter = taskCounter.innerHTML;
-  counter = tasks.length;
-}
-
-counter();
 
 function loadStuff() {
   getData();

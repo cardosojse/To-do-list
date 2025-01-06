@@ -5,13 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
-    /* Produto color */
+    /* Product colors */
     --clr-blue: #4EA8DE;
     --clr-dark-blue: #1E6F9F;
     --clr-purple: #8284FA;
     --clr-dark-purple: #5E60CE;
-    /* Base color */
+    /* Base colors */
     --clr-gray-700: #0d0d0d;
     --clr-gray-600: #1a1a1a;
     --clr-gray-500: #262626;
@@ -21,11 +22,13 @@
     --clr-gray-100: #f2f2f2;
     --clr-danger: #e25858;
 }
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--clr-gray-600);
     overflow-y: auto;
 }
+
 header{
     background-color: var(--clr-gray-700);
     padding: 5em;
@@ -34,12 +37,14 @@ header{
     justify-content: center;
     position: relative;
 }
+
 main{
     width: calc(100% - 50px);
     max-width: 640px;
     margin: auto;
     padding-bottom: 25px;
 }
+
 .input-container{
     position: absolute;
     top: calc(0% + 183px);
@@ -52,6 +57,7 @@ main{
     width: calc(100% - 50px);
     max-width: 640px;
 }
+
 .input-text{
     width: 80%;
     font-size: 16px;
@@ -59,10 +65,12 @@ main{
     background-color: var(--clr-gray-500);
     color: var(--clr-gray-300);
 }
+
 .input-text:focus{
     color: var(--clr-gray-100);
     border: 1px solid var(--clr-dark-purple);
 }
+
 .input-submit{
     width: 20%;
     font-size: 14px;
@@ -71,15 +79,18 @@ main{
     color: var(--clr-gray-100);
     font-weight: 700;
 }
+
 .input-submit:hover{
     cursor: pointer;
     background-color: var(--clr-blue);
 }
+
 .input-text, .input-submit{
     outline: none;
     padding: 16px;
     border-radius: 8px;
 }
+
 .task-info{
     display: flex;
     justify-content: space-between;
@@ -88,9 +99,11 @@ main{
     color: var(--clr-purple);
     margin: 90px 0 20px;
 }
+
 .task-info p:first-child{
     color: var(--clr-blue);
 }
+
 .task-data{
     display: grid;
     justify-items: center;
@@ -101,9 +114,9 @@ main{
     color: var(--clr-gray-300);
     text-align: center;
 }
-.task-data p:nth-child(2){
-    margin-top: 20px;
-    font-weight: 700;
+
+.task-data span:nth-child(2){
+    margin-top: 8px;
 }
 
 .task-counter {
@@ -125,6 +138,7 @@ main{
     line-height: 19.6px;
     cursor: pointer;
 }
+
 .task-list li{
     position: relative;
     background-color: var(--clr-gray-500);
@@ -132,6 +146,7 @@ main{
     border-radius: 8px;
     padding: 16px 45px 16px 45px;
 }
+
 .task-list li::before{
     content: '';
     position: absolute;
@@ -143,13 +158,16 @@ main{
     border-radius: 50%;
     background-image: url('images/unchecked.png');
 }
+
 .task-list li.checked::before{
     background-image: url('images/checked.png');
 }
+
 .task-list li.checked{
     color: var(--clr-gray-300);      
     text-decoration: line-through;
 }
+
 .task-list li span{
     position: absolute;
     top: 50%;
@@ -158,6 +176,7 @@ main{
     color: var(--clr-danger);
     font-size: 20px;
 }
+
 ::-webkit-scrollbar{
     width: 0;
 }
