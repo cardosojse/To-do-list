@@ -119,7 +119,7 @@ main{
     margin-top: 8px;
 }
 
-.task-counter {
+.task-counter, .task-done {
     color: #fff;
     padding: 2px 4px;
     margin-left: 6px;

@@ -2,6 +2,7 @@ const inputBox = document.querySelector(".input-text");
 const addTask = document.querySelector(".input-submit");
 const taskList = document.querySelector(".task-list");
 const taskCounter = document.querySelector(".task-counter");
+const taskDone = document.querySelector(".task-done");
 
 const tasks = [];
 
@@ -30,10 +31,12 @@ addTask.addEventListener("click", function () {
 taskList.addEventListener("click", function (userClick) {
   if (userClick.target.tagName === "LI") {
     userClick.target.classList.toggle("checked");
+    taskDone.innerHTML++;
   } else if (userClick.target.tagName === "SPAN") {
     userClick.target.parentElement.remove();
+    taskCounter.innerHTML--;
+    taskDone.innerHTML--;
   }
-  taskCounter.innerHTML--;
   removeDiv();
   saveData();
 });
@@ -49,6 +52,7 @@ function getData() {
 function removeDiv() {
   if (taskList.innerText === "") {
     document.querySelector(".task-data").style.display = "grid";
+    taskCounter.innerHTML = 0;
   } else {
     document.querySelector(".task-data").style.display = "none";
   }
